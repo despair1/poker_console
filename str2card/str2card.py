@@ -5,6 +5,11 @@ r_card = {
     "k" : 13,
     "a" : 14
 }
+def get_key_by_value(d, target_value):
+    for key, value in d.items():
+        if value == target_value:
+            return key
+    return None
 def split_to_pairs(s):
     return [s[i:i+2] for i in range(0, len(s), 2)]
 
